@@ -1,6 +1,7 @@
 package com.dev.account.dto;
 
 import com.dev.account.model.Customer;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;
@@ -16,14 +17,17 @@ public class CustomerDtoConverter {
 
     public AccountCustomerDto convertToAccountCustomer(Customer from){
         if(from==null) return new AccountCustomerDto("","","");
-        return new AccountCustomerDto(from.getId(), from.getName(), from.getSurname());
+        return new AccountCustomerDto(
+                Objects.requireNonNull(from.getId()),
+                Objects.requireNonNull(from.getName()),
+                Objects.requireNonNull(from.getSurname()));
     }
 
-    public CustomerDto convertToCustomerDto(Customer from) {
+    public CustomerDto convertToCustomerDto(@NotNull Customer from) {
         return new CustomerDto(
-                from.getId(),
-                from.getName(),
-                from.getSurname(),
+                Objects.requireNonNull(from.getId()),
+                Objects.requireNonNull(from.getName()),
+                Objects.requireNonNull(from.getSurname()),
                 Objects.requireNonNull(from.getAccounts())
                         .stream()
                         .map(customerAccountDtoConverter::convert)

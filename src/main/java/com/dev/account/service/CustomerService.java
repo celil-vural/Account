@@ -15,6 +15,13 @@ public class CustomerService {
         this.customerRepository = customerRepository;
         this.customerDtoConverter = customerDtoConverter;
     }
+    /**
+     * @param id
+     * @apiNote find customer by id
+     * @implNote if customer could not find by id throw CustomerNotFoundException
+     * @exception CustomerNotFoundException
+     * @return Customer
+     */
     protected Customer findCustomerById(String id){
         return customerRepository.findById(id).orElseThrow(
                 ()-> new CustomerNotFoundException("Customer could not found by id: "+id));
