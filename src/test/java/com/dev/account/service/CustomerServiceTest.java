@@ -1,7 +1,7 @@
 package com.dev.account.service;
 
 import com.dev.account.dto.CustomerDto;
-import com.dev.account.dto.CustomerDtoConverter;
+import com.dev.account.dto.converter.CustomerDtoConverter;
 import com.dev.account.exception.CustomerNotFoundException;
 import com.dev.account.model.Customer;
 import com.dev.account.repository.CustomerRepository;

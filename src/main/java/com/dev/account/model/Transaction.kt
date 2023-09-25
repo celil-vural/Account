@@ -1,31 +1,35 @@
 package com.dev.account.model
 
-import jakarta.persistence.*
 import org.hibernate.annotations.GenericGenerator
 import java.math.BigDecimal
 import java.time.LocalDateTime
+import jakarta.persistence.*
 
 @Entity
 data class Transaction(
+
         @Id
-        @GeneratedValue(generator ="UUID")
-        @GenericGenerator(name ="UUID", strategy ="org.hibernate.id.UUIDGenerator")
+        @GeneratedValue(generator = "UUID")
+        @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
         val id: String?,
-        val transactionType: TransactionType? =TransactionType.INITIAL,
+        val transactionType: TransactionType? = TransactionType.INITIAL,
         val amount: BigDecimal?,
-        val transactionDate:LocalDateTime?,
+        val transactionDate: LocalDateTime?,
 
         @ManyToOne(fetch = FetchType.LAZY, optional = false)
         @JoinColumn(name = "account_id", nullable = false)
         val account: Account
-){
-        constructor(amount: BigDecimal?,account: Account):this(
-                null,
-                TransactionType.INITIAL,
-                amount,
-                LocalDateTime.now(),
-                account
+
+) {
+
+        constructor(amount: BigDecimal, transactionDate: LocalDateTime, account: Account) : this(
+                id = null,
+                amount = amount,
+                transactionDate = transactionDate,
+                transactionType = TransactionType.INITIAL,
+                account = account
         )
+
         override fun equals(other: Any?): Boolean {
                 if (this === other) return true
                 if (javaClass != other?.javaClass) return false
@@ -46,10 +50,10 @@ data class Transaction(
                 result = 31 * result + (transactionType?.hashCode() ?: 0)
                 result = 31 * result + (amount?.hashCode() ?: 0)
                 result = 31 * result + (transactionDate?.hashCode() ?: 0)
-                result = 31 * result + account.hashCode()
                 return result
         }
 }
-enum class TransactionType{
-        INITIAL,Transfer
+
+enum class TransactionType {
+        INITIAL, TRANSFER
 }
