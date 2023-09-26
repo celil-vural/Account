@@ -4,45 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b6c1da4-3f7c-470b-aac9-75e6ba6e0790" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DockerFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/AccountApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/controller/AccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/controller/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/AccountCustomerDto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/AccountDto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/CreateAccountRequest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/CustomerAccountDto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/CustomerDto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/TransactionDto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/converter/AccountDtoConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/converter/CustomerAccountDtoConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/converter/CustomerDtoConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/dto/converter/TransactionDtoConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/exception/CustomerNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/exception/GeneralExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/model/Account.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/model/Customer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/model/Transaction.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/repository/AccountRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/repository/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/repository/TransactionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/service/AccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/account/service/CustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/account/AccountApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/account/IntegrationTestSupport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/account/TestSupport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/account/controller/AccountControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/account/service/CustomerServiceTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="2b6c1da4-3f7c-470b-aac9-75e6ba6e0790" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +57,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "/home/celil/source/software/Java/dev/account/account-api",
+    "last_opened_file_path": "/home/celil/source/software/Java/SpringBoot/Ders1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -219,6 +181,7 @@
       <workItem from="1695486413759" duration="636000" />
       <workItem from="1695487053125" duration="3952000" />
       <workItem from="1695507351405" duration="21728000" />
+      <workItem from="1695722817674" duration="172000" />
     </task>
     <servers />
   </component>
