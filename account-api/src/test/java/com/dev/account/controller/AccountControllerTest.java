@@ -41,7 +41,7 @@ class AccountControllerTest extends IntegrationTestSupport {
                         .andExpect(jsonPath("$.customer.id", is(customer.getId())))
                         .andExpect(jsonPath("$.customer.name", is(customer.getName())))
                         .andExpect(jsonPath("$.customer.surname", is(customer.getSurname())))
-                        .andExpect(jsonPath("$.transactions", hasSize(1)));
+                        .andExpect(jsonPath("$.transactions", hasSize(1))); 
         }
 
         @Test
