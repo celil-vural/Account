@@ -4,7 +4,7 @@ COPY pom.xml mvnw ./
 COPY .mvn .mvn
 RUN ./mvnw dependency:resolve
 
-COPY src src
+COPY account-api/src src
 RUN ./mvnw package
 
 FROM openjdk:21

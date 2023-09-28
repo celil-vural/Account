@@ -3,7 +3,7 @@ services:
   app:
     image: 'account:latest'
     build:
-      context: .
+      context: account-api
       dockerfile: Dockerfile
     container_name: account
     ports:
